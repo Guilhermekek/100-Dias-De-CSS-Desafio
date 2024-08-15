@@ -1,0 +1,109 @@
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+	background: rgb(2,0,36);
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(11,60,166,1) 0%, rgba(0,212,255,1) 100%);
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+	width: max-content;
+}
+
+.numero{
+  position:absolute;
+  left:0;
+  height: 100px;
+  width: 200px;
+  
+}
+.numero1{
+    position: relative;
+    height: 45px;
+    width: 25px;
+    background-color: white;
+    border-radius: 5px;
+    transform: rotate(45deg);
+    box-shadow:#333;
+    z-index:1;
+    box-shadow: 0px 0px 10px -2px #585555;
+}
+
+.numero1::after{
+    content: "";
+    position:absolute;
+    height: 100px;
+    width: 25px;
+    left:30px;
+    top:30px;
+    background-color: white;
+    border-radius: 5px;
+    transform:translateY(-50%) rotate(-45deg);
+    box-shadow: 0px 0px 10px -2px #585555;
+}
+
+.numero2,
+.numero3{
+    position:absolute;
+	width: 100px;
+	height: 100px;
+	top:0;
+    left:30px;
+    border-radius: 100px;
+    border: 25px solid #fff;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px -2px #585555;
+    z-index: 0;
+}
+
+.numero3{
+	z-index:-1;
+    left:115px;
+}
+
+.texto1{
+    position:relative;
+    display:block;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size:80px;
+    line-height: 60px;
+    margin-left: 15px;
+    z-index:2;
+    margin-top:105px;
+	color: white;
+
+}
+
+.texto2{
+    position:relative;
+    display:block;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 25px;
+    filter: drop-shadow(0px 0px 10px rgba(0 0 0 / 20%));
+    line-height: 20px;
+    margin-left:15px;
+    margin-top:-75px;
+	color:white;
+}
